@@ -8,8 +8,8 @@ pub fn main() {
 
     let good_deeds = 10;
     let bad_deeds = 2;
-    let is_nice = nice::is_nice(good_deeds, bad_deeds);
-    println!("Is the child nice? {}", is_nice);
+    let kid = nice::Kid::new(String::from("Johnny"), good_deeds, bad_deeds);
+    println!("{:?}", kid.niceness)
 }
 
 pub fn attach_message_to_present(message: &String) {
